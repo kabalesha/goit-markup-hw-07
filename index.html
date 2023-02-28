@@ -17,39 +17,54 @@
 
     <!--Top line-->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container trsp">
+        
      <a class="header-logo link" href="./index.html">WEB<span class="studio-letter">STUDIO</span></a>
      <nav class="header-nav">
+      <div class="header-mobile">
         <ul class="header-list">
-          <li><a  href="./index.html" class="header-item link current">Studio</a></li>
+          <li><a href="./index.html" class="header-item link current">Studio</a></li>
           <li><a href="./portfolio.html" class="header-item link">Portfolio</a></li>
           <li><a href="./portfolio.html" class="header-item link">Contacts</a></li>
         </ul>
+      </div>
       </nav>
       <address>
-        <ul class="header-container">
+        <ul class="header-contacts">
         <li class="url"><a href="mailto:info@devstudio.com" class="address link">info@devstudio.com
         </a></li>
         <li class="url"><a href="tel:+110001111111" class="number link ">+11 (000) 111-11-11
         </a></li>
       </ul>
         </address>
-</div>
-    </header> -->
+        <button 
+        class="header-menu-btn js-open-menu" 
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button">
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons/icons.svg#icon-burger"></use>
+          </svg>
+          </svg>
+        </button>
+      </div>
+      
+
+    </header>
 
     <main>
 
     <!--Hero section-->
 
-    <!-- <section class="hero-sec">
+    <section class="hero-sec">
       <div class="hero-container container">
       <h1 class="caption">Effective Solutions for Your Business</h1>
       <button type="button" class="hero-button" data-modal-open>
         Order Service
       </button>
     </div>
-    </section> -->
+    </section>
 
     <!--Main section-->
     <!--Section 1-->
@@ -60,28 +75,28 @@
           <li>
             <a class="feature" href aria-label="antenna link">
               <svg class="rectangles" width="64" height="64">
-                <use href="./images/icons.svg#antenna"></use>
+                <use href="./images/icons/icons.svg#antenna"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="feature" href aria-label="antenna link">
               <svg class="rectangles" width="64" height="64">
-                <use href="./images/icons.svg#clock"></use>
+                <use href="./images/icons/icons.svg#clock"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="feature" href aria-label="antenna link">
               <svg class="rectangles" width="64" height="64">
-                <use href="./images/icons.svg#diagram"></use>
+                <use href="./images/icons/icons.svg#diagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="feature" href aria-label="antenna link">
               <svg class="rectangles" width="64" height="64">
-                <use href="./images/icons.svg#astronaut"></use>
+                <use href="./images/icons/icons.svg#astronaut"></use>
               </svg>
             </a>
           </li>
@@ -130,7 +145,8 @@
           
           </p>
         </li>
-      </ul>
+      
+    </ul>
     </div>
     </section>
 
@@ -140,9 +156,21 @@
       <div class="container">
       <h2 class="text">What Are We Doing</h2>
       <ul class="second-sec">
-        <li class="list"><img src="./images/rectangle.jpg" alt="Our statistics" width="360" height="300" ></li>
-        <li class="list"><img src="./images/rectangle1.jpg" alt="Communication in social media" width="360" height="300" ></li>
-        <li class="list"><img src="./images/rectangle2.jpg" alt="Inspiring places" width="360" height="300" ></li>
+        <li class="list">
+          <img class="about-items" src="./images/about/rectangle.jpg" alt="Our statistics" width="360" height="300" 
+          srcset="./images/about/img_desk@1x-2.jpg 1x, ./images/about/img_desk@2x-2.jpg 2x" 
+          sizes="(min-width: 1158px) 360px, 100vw"></li>
+        <li class="list">
+          <img class="about-items" src="./images/about/rectangle1.jpg" alt="Communication in social media" width="360" height="300" 
+          srcset="./images/about/img_desk@1x.jpg 1x, ./images/about/img_desk@2x.jpg 2x" 
+          sizes="(min-width: 1158px) 360px, 100vw"></li>
+        <li class="list">
+          <img class="about-items" src="./images/about/rectangle2.jpg" 
+            alt="Inspiring places" 
+            width="360" 
+            height="300" 
+            srcset="./images/about/img_desk@1x-1.jpg 1x , ./images/about/img_desk@2x-1.jpg 2x" 
+            sizes="(min-width: 1158px) 360px, 100vw"></li>
       </ul>
     </section>
 
@@ -153,7 +181,18 @@
       <h2 class="banner">Our Team</h2>
       <ul class="team">
         <div class="border-box">
-        <li class="list"><img src="./images/img1.jpg" alt="Team member (Mark Guerro)" width="264" height="260" />
+        <li class="list">
+          <img src="./images/team/img1.jpg" alt="Team member (Mark Guerro)" width="264" height="260" 
+          srcset="
+          ./images/team/img_mob@1x.jpg 264w,
+          ./images/team/img_mob@2x.jpg 264w,
+          ./images/team/img_tab@1x.jpg 264w,
+          ./images/team/img_tab@2x.jpg 264w,
+          ./images/team/img_desk@1x.jpg 264w,
+          ./images/team/img_desk@2x.jpg 264w,
+          "
+          sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, 100vw"
+          />
           <div class="boxes">
         <h3 class="names">Mark Guerro</h3>
         <p class="subjects">Product Designer</p>
@@ -161,28 +200,28 @@
           <li>
             <a class="society-links" href aria-label="Instagram link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#instagram"></use>
+                <use href="./images/icons/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Twitter link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#twitter"></use>
+                <use href="./images/icons/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Facebook link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#facebook"></use>
+                <use href="./images/icons/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Linkedin link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#linkedin"></use>
+                <use href="./images/icons/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
@@ -191,7 +230,17 @@
       </div>
         </li>
         <div class="border-box">
-        <li class="list"><img src="./images/img2.jpg" alt=" Team member (Tom Ford)" width="264" height="260" />
+        <li class="list"><img 
+          src="./images/team/img2.jpg" alt=" Team member (Tom Ford)" width="264" height="260" 
+          srcset="
+        
+          ./images/team/img_mob@1x-1.jpg 264w,
+          ./images/team/img_mob@1x-1.jpg 264w,
+          ./images/team/img_tab@1x-1.jpg 264w,
+          ./images/team/img_tab@2x-1.jpg 264w,
+          ./images/team/img_desk@1x-1.jpg 264w,
+          ./images/team/img_desk@2x-1.jpg 264w,
+         "/>
           <div class="boxes">
         <h3 class="names">Tom Ford</h3>
         <p class="subjects">Frontend Developer</p>
@@ -199,28 +248,28 @@
           <li>
             <a class="society-links" href aria-label="Instagram link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#instagram"></use>
+                <use href="./images/icons/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Twitter link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#twitter"></use>
+                <use href="./images/icons/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Facebook link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#facebook"></use>
+                <use href="./images/icons/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Linkedin link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#linkedin"></use>
+                <use href="./images/icons/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
@@ -229,7 +278,16 @@
     </div>
         </li>
         <div class="border-box">
-        <li class="list"><img src="./images/img3.jpg" alt="Team member (Camila Garcia)" width="264" height="260" />
+        <li class="list"><img src="./images/team/img3.jpg" alt="Team member (Camila Garcia)" width="264" height="260" srcset="
+         
+          ./images/team/img_mob@1x-2.jpg 264w,
+          ./images/team/img_mob@1x-2.jpg 264w,
+          ./images/team/img_tab@1x-2.jpg 264w,
+          ./images/team/img_tab@2x-2.jpg 264w,
+          ./images/team/img_desk@1x-2.jpg 264w,
+          ./images/team/img_desk@2x-2.jpg 264w,
+        
+          "/>
           <div class="boxes">
         <h3 class="names">Garcia Camila</h3>
         <p class="subjects">Marketing</p>
@@ -237,28 +295,28 @@
           <li>
             <a class="society-links" href aria-label="Instagram link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#instagram"></use>
+                <use href="./images/icons/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Twitter link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#twitter"></use>
+                <use href="./images/icons/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Facebook link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#facebook"></use>
+                <use href="./images/icons/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Linkedin link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#linkedin"></use>
+                <use href="./images/icons/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
@@ -267,7 +325,15 @@
       </div>
         </li>
         <div class="border-box">
-        <li class="list"><img src="./images/img4.jpg" alt="Team member (Daniel Wilson)" width="264" height="260" />
+        <li class="list"><img src="./images/team/img4.jpg" alt="Team member (Daniel Wilson)" width="264" height="260" 
+          srcset="
+          ./images/team/img_mob@1x-3.jpg 264w,
+          ./images/team/img_mob@1x-3.jpg 264w,
+          ./images/team/img_tab@1x-3.jpg 264w,
+          ./images/team/img_tab@2x-3.jpg 264w,
+          ./images/team/img_desk@1x-3.jpg 264w,
+          ./images/team/img_desk@2x-3.jpg 264w,
+          "/>
           <div class="boxes">
         <h3 class="names">Daniel Wilson</h3>
         <p class="subjects">UI Designer</p>
@@ -275,28 +341,28 @@
           <li>
             <a class="society-links" href aria-label="Instagram link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#instagram"></use>
+                <use href="./images/icons/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Twitter link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#twitter"></use>
+                <use href="./images/icons/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Facebook link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#facebook"></use>
+                <use href="./images/icons/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="society-links" href aria-label="Linkedin link">
               <svg class="society-icon" width="16" height="16">
-                <use href="./images/icons.svg#linkedin"></use>
+                <use href="./images/icons/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
@@ -317,42 +383,42 @@
         <li class="border-customers">
           <a class="custom-links" href aria-label="YA&CO">
           <svg class="custom-icon">
-            <use href="./images/icons.svg#logo_1"></use>
+            <use href="./images/icons/icons.svg#logo_1"></use>
           </svg>
         </a>
         </li>
         <li class="border-customers">
           <a class="custom-links" href aria-label="Company-1">
           <svg class="custom-icon">
-            <use href="./images/icons.svg#logo_2"></use>
+            <use href="./images/icons/icons.svg#logo_2"></use>
           </svg>
         </a>
         </li>
         <li class="border-customers">
           <a class="custom-links" href aria-label="Company-2">
           <svg class="custom-icon">
-            <use href="./images/icons.svg#logo_3"></use>
+            <use href="./images/icons/icons.svg#logo_3"></use>
           </svg>
         </a>
         </li>
         <li class="border-customers">
           <a class="custom-links" href aria-label="Foster peters">
           <svg class="custom-icon" >
-            <use href="./images/icons.svg#logo_4"></use>
+            <use href="./images/icons/icons.svg#logo_4"></use>
           </svg>
         </a>
         </li>
         <li class="border-customers">
           <a class="custom-links" href aria-label="Brand">
           <svg class="custom-icon">
-            <use href="./images/icons.svg#logo_5"></use>
+            <use href="./images/icons/icons.svg#logo_5"></use>
           </svg>
         </a>
         </li>
         <li class="border-customers">
           <a class="custom-links" href aria-label="Company-3">
           <svg class="custom-icon" >
-            <use href="./images/icons.svg#logo_6"></use>
+            <use href="./images/icons/icons.svg#logo_6"></use>
           </svg>
         </a>
         </li>
@@ -367,7 +433,9 @@
       <footer class="footer">
         <div class="container">
           <div class="social-media-container">
+            <!-- <div class="desktop-footer"> -->
           <div class="left-side-footer">
+            
         <a href="./index.html" class="footer-logo link">WEB<span class="studio-letter-2">STUDIO</span></a>
       <p class="desc">
         Increase the flow of customers and sales for your business with digital
@@ -380,7 +448,7 @@
         <li>
           <a class="soc-links" href aria-label="Instagram link">
             <svg class="" width="24" height="24">
-              <use href="./images/icons.svg#instagram">
+              <use href="./images/icons/icons.svg#instagram">
               </use>
             </svg>
           </a>
@@ -388,26 +456,27 @@
         <li>
           <a class="soc-links" href aria-label="Twitter link">
           <svg class="" width="24" height="24">
-            <use href="./images/icons.svg#twitter">
+            <use href="./images/icons/icons.svg#twitter">
             </use>
           </svg>
         </a></li>
         <li>
           <a class="soc-links" href aria-label="Facebook link">
           <svg class="" width="24" height="24">
-            <use href="./images/icons.svg#facebook">
+            <use href="./images/icons/icons.svg#facebook">
             </use>
           </svg>
         </a></li>
         <li>
           <a class="soc-links" href aria-label="Linkedin link">
           <svg class="" width="24" height="24">
-            <use href="./images/icons.svg#linkedin">
+            <use href="./images/icons/icons.svg#linkedin">
             </use>
           </svg>
         </a></li>
       </ul>
-    </div>
+    
+  </div>
     <div class="subscribe-column">
       <strong class="subscribe-title">Subscribe</strong>
       <form>
@@ -420,7 +489,7 @@
       <button class="subscribe-btn" type="submit">
         Subscribe
         <svg class="subscribe-icon" width="24" height="20">
-          <use href="./images/icons.svg#icon-Frame-3">
+          <use href="./images/icons/icons.svg#icon-Frame-3">
           </use>
         </svg>
 
@@ -435,10 +504,12 @@
     <!-- Modal window -->
 
     <div class="backdrop is-hidden" data-modal >
+     
       <div class="modal">
+        
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
         <strong class="modal-title">Leave your contacts and we will call you back</strong>
@@ -450,7 +521,7 @@
           <div class="modal-form-group">
             <input class="modal-form-field" type="text" name="user_sign" required minlength="2" >
             <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-person-black-18dp-1">
+              <use href="./images/icons/icons.svg#icon-person-black-18dp-1">
               </use>
             </svg>
           </div>
@@ -461,7 +532,7 @@
           <div class="modal-form-group">
             <input class="modal-form-field" type="text" name="user_tel" required maxlength="15" >
             <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-phone-black-18dp-1">
+              <use href="./images/icons/icons.svg#icon-phone-black-18dp-1">
               </use>
             </svg>
           </div>
@@ -472,7 +543,7 @@
           <div class="modal-form-group">
             <input class="modal-form-field" type="text" name="user_email" required maxlength="20">
             <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-email-black-18dp-1">
+              <use href="./images/icons/icons.svg#icon-email-black-18dp-1">
               </use>
             </svg>
           </div>
@@ -501,10 +572,58 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container is" id="mobile-menu">
+      
+        <button class="menu-btn js-close-menu" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-colomn">
+          <li><a class="menu-items current-menu" href="./index.html">Studio</a></li>
+          <li><a class="menu-items" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="menu-items" href="./index.html">Contacts</a></li>
+        </ul>
+        <ul class="menu-contacts">
+          <li><a class="menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li><a class="menu-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu-society">
+          <li>
+            <a class="society-links" href aria-label="Instagram link">
+              <svg class="society-icon" width="24" height="20">
+                <use href="./images/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="society-links" href aria-label="Twitter link">
+              <svg class="society-icon" width="24" height="20">
+                <use href="./images/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="society-links" href aria-label="Facebook link">
+              <svg class="society-icon" width="24" height="20">
+                <use href="./images/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="society-links" href aria-label="Linkedin link">
+              <svg class="society-icon" width="24" height="20">
+                <use href="./images/icons/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </div>
 
     <!-- Script.js -->
-    
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
