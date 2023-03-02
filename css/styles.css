@@ -597,6 +597,7 @@
     .first-sec{
        margin-left: auto;
         /* width: 396px; */
+        display: block;
         max-width: 100%;
     }
     @media screen and (min-width:768px){
@@ -607,11 +608,19 @@
     @media screen and (min-width:1200px){
         .first-sec{
             display: flex;
+            
             gap: 24px;
             align-items: center;   
         }
     }
-   
+    .feature-sec{
+        
+    }
+    @media screen and (min-width:1200px){
+    .feature-sec{
+        
+    }
+}
     .point{
         font-weight: 700;
         font-size: 36px;
@@ -642,9 +651,9 @@
             text-align: inherit;
         }
     }
-    .main-links{
+    /* .main-links{
         display: none;
-    }
+    } */
     @media screen and (min-width:1200px){
         .main-links{
             align-items: center;
